@@ -22,10 +22,12 @@
 body {
     font-family: var(--font-body);
     color: var(--color-text-main);
-    background-color: var(--color-bg-primary);
+    background-color: #ffffff;
     background-image: 
-        radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.8), transparent 40%),
-        radial-gradient(circle at 85% 30%, rgba(229, 169, 180, 0.15), transparent 50%);
+        linear-gradient(rgba(202, 247, 236, 0.4) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(202, 247, 236, 0.4) 50%, transparent 50%);
+    background-size: 80px 80px;
+    background-position: 0 0, 0 0;
     background-attachment: fixed;
     line-height: 1.8;
     overflow-x: hidden;
@@ -56,12 +58,12 @@ ul {
 
 /* Glassmorphism Utility */
 .glassmorphism {
-    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 242, 250, 0.7));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: var(--border-glass);
-    border-radius: 12px;
-    box-shadow: var(--shadow-glass);
+    border: 1px solid rgba(255, 192, 203, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(236, 147, 163, 0.2);
 }
 
 /* Typography elements */
@@ -89,22 +91,26 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--color-accent);
-    color: var(--color-white);
+    background: linear-gradient(120deg, #ffb7de, #ff98c7);
+    color: #ffffff;
     padding: 0.8rem 2rem;
-    border-radius: 30px;
+    border-radius: 40px;
     font-family: var(--font-body);
-    font-weight: 500;
-    border: none;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(229, 169, 180, 0.4);
+    box-shadow: 0 8px 20px rgba(233, 125, 165, 0.45);
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: var(--color-accent-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(229, 169, 180, 0.5);
+    background: linear-gradient(120deg, #ffabd6, #ff82b9);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(233, 125, 165, 0.55);
+}
+
+.btn:active {
+    transform: translateY(0) scale(0.99);
 }
 
 /* Header */
@@ -203,6 +209,9 @@ ul {
     margin: 0 auto;
     position: relative;
     gap: 4rem;
+    background: linear-gradient(120deg, rgba(255, 220, 235, 0.4), rgba(255, 245, 255, 0.2));
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(200, 148, 176, 0.2);
 }
 
 .hero-content {
@@ -243,6 +252,18 @@ ul {
 
 .hero-decoration img:hover {
     transform: rotate(0deg) scale(1.02);
+}
+
+.tulips-decoration {
+    position: absolute;
+    bottom: -60px;
+    right: -40px;
+    width: 250px;
+    opacity: 0.95;
+    transform: rotate(15deg) scale(1.1);
+    z-index: 3;
+    pointer-events: none;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
 }
 
 /* Divider mimicking Lace */
