@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ちあこのサイト - Portfolio</title>
+    <meta name="description" content="ちあこのポートフォリオサイトです。編んだもの、ぬいぐるみ、アクセサリーなどの作品を紹介します。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">Chiako's Site</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sns-links">
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="Mercari"><i class="fa-solid fa-store"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome to<br>My Portfolio</h2>
+                <p class="hero-subtitle">Handmade with love & care.<br>Soft, natural, and beautiful creations.</p>
+                <a href="#works" class="btn">View Works <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <!-- Decorative image mimicking the reference -->
+            <div class="hero-decoration">
+                <img src="参考資料/作品写真/IMG_2109.JPG" alt="Decorative flowers">
+            </div>
+        </section>
+
+        <div class="lace-divider"></div>
+
+        <section id="about" class="about">
+            <h2 class="section-title"><span>About Me</span></h2>
+            <div class="about-card glassmorphism">
+                <div class="about-text">
+                    <h3>Hello, I'm Chiako.</h3>
+                    <p>ちあこ今日こそミシン</p>
+                </div>
+                <!-- Optional image for about -->
+                <div class="about-image">
+                    <img src="参考資料/作品写真/IMG_2112.JPG" alt="About Image">
+                </div>
+            </div>
+        </section>
+
+        <div class="lace-divider"></div>
+
+        <section id="works" class="works">
+            <h2 class="section-title"><span>Works</span></h2>
+            
+            <div class="category">
+                <h3 class="category-title">ものども <span>- Knitted -</span></h3>
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2107.JPG" alt="編んだもの 1"><div class="overlay"><span>View Details</span></div></div>
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2108.JPG" alt="編んだもの 2"><div class="overlay"><span>View Details</span></div></div>
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2114.JPG" alt="編んだもの 3"><div class="overlay"><span>View Details</span></div></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3 class="category-title">編んだもの <span>- Plushies -</span></h3>
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2111.JPG" alt="ぬいぐるみ 1"><div class="overlay"><span>View Details</span></div></div>
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2110.JPG" alt="ぬいぐるみ 2"><div class="overlay"><span>View Details</span></div></div>
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2112.JPG" alt="ぬいぐるみ 3"><div class="overlay"><span>View Details</span></div></div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3 class="category-title">アクセサリー <span>- Accessories -</span></h3>
+                <div class="photo-grid">
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2115.JPG" alt="アクセサリー 1"><div class="overlay"><span>View Details</span></div></div>
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2116.JPG" alt="アクセサリー 2"><div class="overlay"><span>View Details</span></div></div>
+                    <div class="photo-item"><img src="参考資料/作品写真/IMG_2113.JPG" alt="アクセサリー 3"><div class="overlay"><span>View Details</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lace-divider"></div>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title"><span>Contact</span></h2>
+            <div class="contact-card glassmorphism">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group row">
+                        <div class="input-wrapper">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Chiako. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
