@@ -29,6 +29,15 @@ body {
     background-attachment: fixed;
     line-height: 1.8;
     overflow-x: hidden;
+    position: relative;
+}
+
+#particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
 }
 
 html {
