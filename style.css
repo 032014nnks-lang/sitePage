@@ -306,6 +306,26 @@ ul {
     margin-bottom: 1rem;
 }
 
+.fish-game-link {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    letter-spacing: 0.08em;
+    color: #ff5f9f;
+    background: linear-gradient(120deg, #ffe9f4, #fff8fc);
+    border: 1px solid rgba(255, 130, 185, 0.45);
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    box-shadow: 0 4px 12px rgba(255, 125, 173, 0.2);
+}
+
+.fish-game-link:hover {
+    color: #ffffff;
+    background: linear-gradient(120deg, #ffabd6, #ff82b9);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 125, 173, 0.3);
+}
+
 .about-image {
     flex: 0 0 300px;
 }

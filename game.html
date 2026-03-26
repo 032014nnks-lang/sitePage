@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISH! Bicycle Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <main class="game-page">
+        <a href="index.html#about" class="back-link">Back to Portfolio</a>
+        <h1>FISH! Ride</h1>
+        <p class="lead">クリック or スペースキーでジャンプ。障害物を乗り越えて雄物川までたどり着こう。</p>
+
+        <section class="game-card">
+            <div class="hud">
+                <p>Score: <span id="score">0</span></p>
+                <p>Best: <span id="best">0</span></p>
+            </div>
+            <canvas id="game-canvas" width="900" height="420" aria-label="Fish bicycle game"></canvas>
+            <div class="actions">
+                <button id="start-button" type="button">Start / Restart</button>
+            </div>
+            <p id="message" class="message">Startボタンを押してゲーム開始！</p>
+        </section>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
